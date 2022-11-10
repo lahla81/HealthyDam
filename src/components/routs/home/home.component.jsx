@@ -48,7 +48,7 @@ const Home = () =>{
         },
     ]       
         return(
-            <div className="directory-menu">
+            <div className="row mt-5">
                 {
                     categories.map(({title, id, imageUrl, size}) => (
                         <MenuItem key={id} title={title} imageUrl={imageUrl} size={size}/>

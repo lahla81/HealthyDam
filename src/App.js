@@ -6,15 +6,15 @@ import './components/assets/fonts/Fonts.css';
 
 import HomePage from './pages/homePage/homePage.component';
 import Navigation from './components/routs/navigation/navigation.component';
-import SignIn from './components/sign-in/sign-in.component';
+import Authentication from './components/authentication/authentication';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
     <Routes>
       <Route path='/' element={<Navigation/>} >
         <Route index element={<HomePage/>}/>
-        <Route path='signIn' element={<SignIn/>}/>
+        <Route path='auth' element={<Authentication/>}/>
       </Route>
     </Routes>
     </div>
