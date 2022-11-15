@@ -5,8 +5,9 @@ import './App.css';
 import './components/assets/fonts/Fonts.css';
 
 import HomePage from './pages/homePage/homePage.component';
-import Navigation from './components/routs/navigation/navigation.component';
-import Authentication from './components/authentication/authentication';
+import Navigation from './routs/navigation/navigation.component';
+import Authentication from './routs/authentication/authentication';
+import Shop from './routs/shop/shop.component';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path='/' element={<Navigation/>} >
         <Route index element={<HomePage/>}/>
         <Route path='auth' element={<Authentication/>}/>
+        <Route path='shop' element={<Shop/>}/>
       </Route>
     </Routes>
     </div>

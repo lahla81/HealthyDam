@@ -5,9 +5,8 @@ import './sign-in.style.scss';
 import Button  from '../button/button.component';
 
 import { 
-    createUserDocumentFromAuth, 
     signInAuthUserWithEmailAndPassword, 
-    signInWithGooglePopup
+    signInWithGooglePopup,
 } from "../../utils/firebase/firebase.utils";
 
 const defaultFormField = {
@@ -24,30 +23,31 @@ const SignInForm = () => {
     }
 
     const signInWithGoogle = async () => {
-        const { user } = await signInWithGooglePopup();
-        await createUserDocumentFromAuth(user);
+        await signInWithGooglePopup();
     }
 
     const handleSubmit = async (event) => {
         event.preventDefault();
 
-    try{
-        const response = await signInAuthUserWithEmailAndPassword(email, password);
-        console.log(response)
-        resetFormField();
-    }catch(error){
-        switch(error.code){
-            case 'auth/user-not-found':
-                alert('emal is not correct');
-                break;
-            case 'auth/wrong-password':
-                alert('Incorrect Password');
-                break;
-            default:
-                console.log(error);
+        try{
+            await signInAuthUserWithEmailAndPassword(email, password);
+            resetFormField();
+        }catch(error){
+            switch(error.code){
+                case 'auth/user-not-found':
+                    alert('emal is not correct');
+                    break;
+                case 'auth/wrong-password':
+                    alert('Incorrect Password');
+                    break;
+                case 'auth/network-request-failed':
+                    alert('No internet Connection')
+                    break;
+                default:
+                    console.log(error);
+            }
         }
     }
-}
 
 const handleChange = (event) =>{
     const {name, value} = event.target;

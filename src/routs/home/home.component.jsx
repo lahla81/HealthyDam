@@ -1,12 +1,12 @@
 import React from "react";
 
-import MenuItem from '../../menu-item/menu-item.component';
-import milk from '../../assets/img/milk.jpg';
-import rayeb from '../../assets/img/rayeb-850.jpg';
-import yogurt from '../../assets/img/tot-yogurt.jpg';
-import samna from '../../assets/img/samna.jpg';
-import juice from '../../assets/img/JuiceCover.png';
-import iceCream from '../../assets/img/ice-cream.jpeg';
+import MenuItem from '../../components/menu-item/menu-item.component';
+import milk from '../../components/assets/img/milk.jpg';
+import rayeb from '../../components/assets/img/rayeb-850.jpg';
+import yogurt from '../../components/assets/img/tot-yogurt.jpg';
+import samna from '../../components/assets/img/samna.jpg';
+import juice from '../../components/assets/img/JuiceCover.png';
+import iceCream from '../../components/assets/img/ice-cream.jpeg';
 
 const Home = () =>{
     const categories = [

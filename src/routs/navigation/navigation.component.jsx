@@ -1,10 +1,14 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useContext } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { UserContext } from "../../context/user.context";
+import { signOutUser } from "../../utils/firebase/firebase.utils";
 
-import logo from '../../assets/img/logo-background-center.jpg';
+import logo from '../../components/assets/img/logo-background-center.jpg';
 import './navigation.style.scss';
 
 const Navigation = () => {
+    const { currentUser } = useContext(UserContext);
+
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg mt-4">
@@ -21,9 +25,21 @@ const Navigation = () => {
                             <li className="nav-item">
                                 <Link className="nav-link" to='/contactUs'>Contact Us</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="nav-link" to='/auth'>Sign In</Link>
-                            </li>
+                            {
+                                currentUser ?(
+                                    <li className="nav-item">
+                                        <Link className="nav-link" onClick={signOutUser}> 
+                                            {' '}
+                                            SIGN OUT{' '}
+                                        </Link>
+                                    </li>
+                                ) : (
+                                    <li className="nav-item">
+                                        <Link className="nav-link" to='/auth'>Sign In</Link>
+                                    </li>
+                                )
+                            }
+                            
                         </ul>
                     </div>
                     <Link className="navbar-brand position-absolute top-0 end-0" to='/'>
