@@ -8,6 +8,7 @@ import HomePage from './pages/homePage/homePage.component';
 import Navigation from './routs/navigation/navigation.component';
 import Authentication from './routs/authentication/authentication';
 import Shop from './routs/shop/shop.component';
+import Checkout from './routs/checkout/checkout.component';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route index element={<HomePage/>}/>
         <Route path='auth' element={<Authentication/>}/>
         <Route path='shop' element={<Shop/>}/>
+        <Route path='checkout' element={<Checkout/>}/>
       </Route>
     </Routes>
     </div>
