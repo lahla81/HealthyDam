@@ -4,3 +4,6 @@ body{
 .cursor-pointer{
   cursor: pointer;
 }
+.text-bold{
+  font-weight: bold;
+}
