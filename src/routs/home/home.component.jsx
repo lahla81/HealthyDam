@@ -1,51 +1,40 @@
 import React from "react";
 
 import MenuItem from '../../components/menu-item/menu-item.component';
-import milk from '../../components/assets/img/milk.jpg';
-import rayeb from '../../components/assets/img/rayeb-850.jpg';
-import yogurt from '../../components/assets/img/tot-yogurt.jpg';
-import samna from '../../components/assets/img/samna.jpg';
-import juice from '../../components/assets/img/JuiceCover.png';
-import iceCream from '../../components/assets/img/ice-cream.jpeg';
+// import milk from '../../components/assets/img/milk.jpg';
+// import rayeb from '../../components/assets/img/rayeb-850.jpg';
+// import yogurt from '../../components/assets/img/tot-yogurt.jpg';
+// import samna from '../../components/assets/img/samna.jpg';
+// import juice from '../../components/assets/img/JuiceCover.png';
+// import iceCream from '../../components/assets/img/ice-cream.jpeg';
 
 const Home = () =>{
     const categories = [
         {
-            title: 'الحليب',
-            imageUrl: milk,
             id: 1,
-            size: 'large'
-        },
-        {
-            title: 'الرايب',
-            imageUrl:rayeb,
+            title: 'hats',
+            imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
+          },
+          {
             id: 2,
-            size: 'large'
-        },
-        {
-            title: 'الزبادي',
-            imageUrl:yogurt,
+            title: 'jackets',
+            imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
+          },
+          {
             id: 3,
-            size: 'large'
-        },
-        {
-            title: 'السمن',
-            imageUrl:samna,
+            title: 'sneakers',
+            imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
+          },
+          {
             id: 4,
-            size: 'large'
-        },
-        {
-            title: 'العصائر',
-            imageUrl:juice,
+            title: 'womens',
+            imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
+          },
+          {
             id: 5,
-            size: 'large'
-        },
-        {
-            title: 'الايس كريم',
-            imageUrl:iceCream,
-            id: 6,
-            size: 'large'
-        },
+            title: 'mens',
+            imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
+          },
     ]       
         return(
             <div className="row mt-5">

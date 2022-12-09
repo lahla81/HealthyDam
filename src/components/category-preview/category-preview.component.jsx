@@ -1,20 +1,21 @@
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import ProductCard from "../product-card/product-card.component";
 
 
 const CategoryPreview = ({title, products}) => {
     return(
-        <div>
+        <Fragment>
             <h4 className="text-center">
                 <Link 
-                    className="cursor-pointer text-bold mb-1"
+                    className="cursor-pointer main-color1 text-bold mb-1"
                     to={title}>
                     {title.toUpperCase()}
                 </Link>
             </h4>
             <div className="container">
                 <div className="row mb-3">
-                    {
+                    {products &&
                         products
                             .filter((_, idx) => idx < 4 )
                             .map((product) => (
@@ -26,7 +27,7 @@ const CategoryPreview = ({title, products}) => {
                     }
                 </div>
             </div>
-        </div>
+        </Fragment>
     )
 }
 
