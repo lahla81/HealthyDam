@@ -1,18 +1,20 @@
 import React, { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
-import { signOutUser } from "../../utils/firebase/firebase.utils";
 
 import logo from '../../components/assets/img/logo-background-center.jpg';
 import './navigation.style.scss';
 import CartIcon from "../../components/cart-icon/cart-icon.component";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
-import { useSelector } from "react-redux";
-import { userSelector } from "../../store/user/user.selector";
+import { useDispatch, useSelector } from "react-redux";
+import { selectCurrentUser  } from "../../store/user/user.selector";
 import { selectIsCartOpen } from '../../store/cart/cart.selector' 
+import { signOutStart } from "../../store/user/user.action";
 
 const Navigation = () => {
-    const currentUser = useSelector(userSelector);
+    const dispatch = useDispatch();
+    const currentUser = useSelector(selectCurrentUser);
     const isCartOpen = useSelector(selectIsCartOpen);
+    const signOutUser = () => dispatch(signOutStart())
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg mt-4">
