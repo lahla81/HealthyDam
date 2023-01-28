@@ -25,14 +25,14 @@ import {
 import { Category } from "../../store/categories/category.types";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCuATLgYpzR-QfnKkL-pgV0_IJ-s3KjbgI",
-    authDomain: "healthydam-db.firebaseapp.com",
-    databaseURL: "https://healthydam-db-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "healthydam-db",
-    storageBucket: "healthydam-db.appspot.com",
-    messagingSenderId: "514263680119",
-    appId: "1:514263680119:web:8f5a04f4cd0c861d6c7272",
-    measurementId: "G-CHB0Q078HE",
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MASSAGING_SENDER_ID,
+    appId: process.env.REACT_APP_APP_ID,
+    measurementId: process.env.REACT_APP_MEASUREMENT_ID,
   };
 
 export const firebaseApp = initializeApp(firebaseConfig);
@@ -67,7 +67,7 @@ export const addCollectionAndDocument = async<T extends ObjectsToAdd> (
 }
 
 export const getCategoriesAndDocuments = async (): Promise<Category[]> => {
-  const collectionRef = collection(db, 'collections');
+  const collectionRef = collection(db, 'healthydam');
   const q = query(collectionRef);
 
   const querySnapshot = await getDocs(q);

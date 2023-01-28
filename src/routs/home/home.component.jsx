@@ -1,12 +1,6 @@
 import React from "react";
 
 import MenuItem from '../../components/menu-item/menu-item.component';
-// import milk from '../../components/assets/img/milk.jpg';
-// import rayeb from '../../components/assets/img/rayeb-850.jpg';
-// import yogurt from '../../components/assets/img/tot-yogurt.jpg';
-// import samna from '../../components/assets/img/samna.jpg';
-// import juice from '../../components/assets/img/JuiceCover.png';
-// import iceCream from '../../components/assets/img/ice-cream.jpeg';
 
 const Home = () =>{
     const categories = [
