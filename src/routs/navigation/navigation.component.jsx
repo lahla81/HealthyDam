@@ -18,7 +18,6 @@ const Navigation = () => {
     return (
         <Fragment>
             <nav className="navbar navbar-expand-lg mt-4">
-                <CartIcon/>
                 <div className="container-fluid navigation my-2">
                     <Link className="navbar-brand d-none d-sm-none d-md-none d-lg-block" to='/'>Healthy Damanhour</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,13 +47,13 @@ const Navigation = () => {
                             }
                         </ul>
                     </div>
-                    
-                    <Link className="navbar-brand position-absolute top-0 end-0" to='/'>
-                        <img className="nav-logo" alt='logo' src={logo} height='100px'/>
-                    </Link>
+                    <CartIcon/>
                    {isCartOpen && <CartDropdown/>}
                 </div>
             </nav>
+            <Link className="" to='/'>
+                <img className="mx-auto d-block" alt='logo' src={logo} height='100px'/>
+            </Link>
             <Outlet/>
         </Fragment>
     )

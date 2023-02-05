@@ -45,7 +45,12 @@ const Home = () =>{
             title: 'keto',
             arTitle: 'كيتو',
             imageUrl: 'https://firebasestorage.googleapis.com/v0/b/healthydam-db.appspot.com/o/keto%2Fpound%20cake.jpg?alt=media&token=31c84466-040a-45ed-91d5-891b998366f6',
-          },
+          },{
+            id: 8,
+            title: 'oats',
+            arTitle: 'الشوفان',
+            imageUrl: 'https://firebasestorage.googleapis.com/v0/b/healthydam-db.appspot.com/o/oats%2Fdeio1v2_oats_625x300_24_May_19.jpg?alt=media&token=2506c4f6-d8c3-422a-83c5-055ea0e1d827',
+          }
     ]       
         return(
             <div className="row mt-5">

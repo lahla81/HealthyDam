@@ -2,6 +2,7 @@
   "name": "healthydam",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lahla81.github.io/HealthyDam/",
   "dependencies": {
     "@testing-library/jest-dom": "5.16.1",
     "@testing-library/react": "12.1.2",
@@ -12,6 +13,7 @@
     "@types/react-dom": "^18.0.9",
     "cra-template": "1.2.0",
     "firebase": "^9.13.0",
+    "gh-pages": "^5.0.0",
     "node-sass": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,6 +31,8 @@
     "typescript": "^4.9.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
