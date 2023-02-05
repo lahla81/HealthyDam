@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/HealthyDam/static/css/main.86f8c552.css",
-    "main.js": "/HealthyDam/static/js/main.69735cd1.js",
+    "main.js": "/HealthyDam/static/js/main.5e7a1620.js",
     "static/media/NotoSansArabic.ttf": "/HealthyDam/static/media/NotoSansArabic.0bff71d9b37001e42b93.ttf",
     "static/media/LuckiestGuy-Regular.ttf": "/HealthyDam/static/media/LuckiestGuy-Regular.04dea529d3802106e6d7.ttf",
     "static/media/logo-background-center.jpg": "/HealthyDam/static/media/logo-background-center.18921fb970653fc6e15e.jpg",
     "static/media/shopping-bag.svg": "/HealthyDam/static/media/shopping-bag.a688874f6f1507316bdfa420328a4a53.svg",
     "index.html": "/HealthyDam/index.html",
     "main.86f8c552.css.map": "/HealthyDam/static/css/main.86f8c552.css.map",
-    "main.69735cd1.js.map": "/HealthyDam/static/js/main.69735cd1.js.map"
+    "main.5e7a1620.js.map": "/HealthyDam/static/js/main.5e7a1620.js.map"
   },
   "entrypoints": [
     "static/css/main.86f8c552.css",
-    "static/js/main.69735cd1.js"
+    "static/js/main.5e7a1620.js"
   ]
 }
