@@ -22,11 +22,11 @@ function App() {
   return (
     <div className="App container">
       <Routes>
-        <Route path='/' element={<Navigation/>} >
+        <Route path='/HealthyDam' element={<Navigation/>} >
           <Route index element={<HomePage/>}/>
-          <Route path='auth' element={<Authentication/>}/>
-          <Route path='shop/*' element={<Shop/>}/>
-          <Route path='checkout' element={<Checkout/>}/>
+          <Route path='/HealthyDam/auth' element={<Authentication/>}/>
+          <Route path='/HealthyDam/shop/*' element={<Shop/>}/>
+          <Route path='/HealthyDam/checkout' element={<Checkout/>}/>
         </Route>
       </Routes>
     </div>
