@@ -4,13 +4,15 @@
   height: auto;
   align-items: center;
   position: relative;
-  border: 2px solid lightgray;
+  border: 2px solid rgba($color: #958b8b, $alpha: 1.0);
 
   img {
-    width: 100%;
+    width: 60%;
     height: 260px;
     object-fit: cover;
     margin-bottom: 5px;
+    transition: 1s ease-in-out all;
+    transform: scale(0.9); 
   }
 
   button {
@@ -35,4 +37,28 @@
   .footer {
     text-align: center;
   }
+}
+
+.c-latest__overlay {
+  display: flex;
+  justify-content: space-around;
+  background: rgba(255, 255, 255, 0.3);
+  height: 100%;
+  border: 1px solid #FFFFFF;
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(128, 128, 128, 0.03) inset; 
+}
+  
+.c-latest__section {
+  margin-top: 4px;
+  padding: 4px;
+ }
+
+.c-latest__overlay:hover img {
+  transform: scale(1); 
+}
+
+.c-latest__overlay:hover {
+  border: 1px solid rgba($color: #2e2e2e, $alpha: 0.3);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(85, 85, 85, 0.03) outset; 
 }

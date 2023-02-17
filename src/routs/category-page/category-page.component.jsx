@@ -21,7 +21,7 @@ const CategoryPage = () => {
       <h2 className='text-center green-color'>{category.toUpperCase()}</h2>
       {
         isLoaging ? (<Spinner />) : (
-          <div className='row my-2'>
+          <div className='row my-2 c-latest__row'>
             {products &&
               products.map((product) => (
                 <ProductCard key={product.id} product={product} />

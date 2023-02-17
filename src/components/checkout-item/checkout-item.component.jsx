@@ -23,10 +23,10 @@ const CheckoutItem = ({cartItem}) => {
             <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-4">
-                        <img src={imageUrl} className="img-fluid w-100 rounded-start" style={{height:180}} alt={`${name}`}/>
+                        <img src={imageUrl} className="img-fluid w-100 rounded-start h-75" alt={`${name}`}/>
                     </div>
                     <div className="col-7">
-                        <div className="card-body">
+                        <div className="card-body align-middle">
                             <h6 className="card-title h2 main-color">{name}</h6>
                             <p className="card-text h3">
                             <span className="cursor-pointer px-2 green-color" onClick={removeItemHandler}>
