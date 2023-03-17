@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 import { Outlet, Link } from "react-router-dom";
 
 import logo from '../../components/assets/img/logo-background-center.jpg';

@@ -1,5 +1,3 @@
-import React from "react";
-
 import MenuItem from '../../components/menu-item/menu-item.component';
 
 const Home = () =>{
